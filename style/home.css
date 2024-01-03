@@ -467,13 +467,26 @@ body::-webkit-scrollbar {
 
     .tecnologies {
         width: 80%;
-        align-self: center;
+        align-self: flex-end;
+        margin-bottom: 20px;
+        margin-top: -30px;
+        gap: 1px;
+        margin-right: -18px;
+    }
+
+    .tecnologies > img {
+        transform: scale(0.9);
     }
 
     .home__container{
         margin: 0 0 10px 0;
         padding: 0px 20px;
     }
+
+    .img-me__container:hover{
+        transform: scale(1.0);
+    }
+
 
     .container > div {
         display: flex;
