@@ -188,21 +188,21 @@
     align-items: flex-start;
     padding: 0 15px;
     gap: 10px;
+
 }
 
-
-.container > section {
+.container > div {
+    display: flex;
+    box-shadow: 10px 10px 15px 1px #1a1a1a;
+    border-radius: 10px;
+    padding: 10px
+}
+.container > div > section {
     max-width: 400px;
-    border: #333333 1px solid;
     border-radius: 10px;
     padding: 15px;
     height: 450px;
     transition: all 0.4s ease;
-}
-
-.container > section:hover {
-    transform: scale(1.1);
-    background-color: var(--background-color);
 }
 
 .aboutMe__content > h2 {
@@ -285,9 +285,9 @@ svg {
     transition: all 0.5s ease;
 }
 
-.project > img:hover {
+/* .project > img:hover {
     transform: scale(1.5);
-}
+} */
 
 .resume {
     display: flex;
@@ -312,6 +312,13 @@ svg {
     background-color: #353535;
     border-radius: 10px;
     flex-grow: 1;
+}
+
+.projects {
+    display: flex;
+    gap: 65px;
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
 }
 
 .codigo-fonte__button {
@@ -393,7 +400,7 @@ svg {
 }
 
 .socialMedias__container > li {
-    text-decoration: none;
+    list-style-type: none; 
 }
 
 .socialMedia_icon {
@@ -434,15 +441,51 @@ svg {
 
     .home__container{
         margin: 0 0 10px 0;
+        padding: 0px 20px;
     }
 
-    .container {
-        display: grid;
+    .container > div {
+        display: flex;
+        flex-direction: column;
     }
 
-    .container > section {
+    .container > div > section {
         width: 100%;
         border: none;
         height: auto;
+    }
+    
+    .projects__container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project > img {
+        width: 100%;
+        object-fit: cover;
+        height: auto
+    }
+
+    .socialMedia {
+        width: 100%;
+
+    }
+    .socialMedias__container {
+        display: flex;
+        flex-direction: row;
+        bottom: 0;
+        left: 25%;
+        border-radius: 10px 10px 0 0 ;
+        background-color: rgba(0, 0, 0, 0.483);
     }
 }
