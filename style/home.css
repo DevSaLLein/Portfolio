@@ -214,13 +214,6 @@
     background-color: var(--background-color);
 }
 
-.switchTheme {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    padding: 30px;
-}
-
 svg {
     width: 400px;
     height: 500px;
@@ -234,7 +227,7 @@ svg {
     display: flex;
     justify-content: center;
     padding: 0 15px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 .projects__container {
@@ -284,15 +277,21 @@ svg {
     flex-direction: row-reverse;
 }
 
+.project:nth-child(3) > img{
+    border: 1px solid rgb(89, 89, 89);
+}
+
 .project > img {
     border-radius: 10px;
     width: 500px;
     transition: all 0.5s ease;
+
+    box-shadow: 1px 1px 15px 5px #333333;
 }
 
-/* .project > img:hover {
-    transform: scale(1.5);
-} */
+.project > img:hover {
+    transform: scale(1.3);
+}
 
 .resume {
     display: flex;
@@ -315,8 +314,9 @@ svg {
     cursor: pointer;
     display: flex;
     background-color: #353535;
-    border-radius: 10px;
+    border-radius: 5px;
     flex-grow: 1;
+    margin-top: 10px;
 }
 
 .projects {
@@ -341,7 +341,21 @@ svg {
     color: var(--primary-color);
 }
 
-.buttonSwitcher {
+.RollAction__container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.activeRollButton {
+    bottom: 20px;
+    opacity: 1;
+}
+
+.RollButton {
     background: none;
     border: none;
     background-color: var(--primary-color);
@@ -351,12 +365,12 @@ svg {
     transition: all .3s ease-in-out;
 }
 
-.buttonSwitcher:hover {
+.RollButton:hover {
     filter: brightness(90%);
-    transform: scale(1.5);
+    transform: scale(1.1);
 }   
 
-.buttonSwitcher span {
+.RollButton span {
     color: var(--background-color);
     transition: all .3s ease-in-out;
 }
@@ -478,6 +492,10 @@ svg {
         width: 100%;
         object-fit: cover;
         height: auto
+    }
+
+    .project > img:hover {
+        transform: scale(1.0);
     }
 
     .project:nth-child(2){

@@ -1,6 +1,18 @@
-const button = document.querySelector('.buttonSwitcher');
-const aboutMe__content = document.querySelector('.aboutMe__content');
+const rollButton = document.querySelector(".RollButton");
+const rollButton__container = document.querySelector(".RollAction__container");
 
-const handleClickButton = () => {
-    alert('essa funcionalidade ainda não está pronta, estou trabalhando para que esteja pronta o quanto antes!')
-};
+const handleRollButtonClick = () => {
+    window.scroll({top: 0, behavior:'smooth'})
+}
+
+rollButton.addEventListener('click', handleRollButtonClick);
+
+window.addEventListener('scroll', () => {
+    if ( window.pageYOffset > 100) {
+        rollButton__container.classList.add("activeRollButton");
+
+        console.log('ativado');
+    } else {
+        rollButton__container.classList.remove("activeRollButton");
+    }
+})
