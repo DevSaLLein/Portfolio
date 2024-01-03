@@ -279,6 +279,11 @@ svg {
     gap: 30px;
 }
 
+.project:nth-child(2){
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .project > img {
     border-radius: 10px;
     width: 500px;
@@ -317,7 +322,6 @@ svg {
 .projects {
     display: flex;
     gap: 65px;
-    flex-wrap: wrap-reverse;
     flex-direction: column;
 }
 
@@ -474,6 +478,11 @@ svg {
         width: 100%;
         object-fit: cover;
         height: auto
+    }
+
+    .project:nth-child(2){
+        display: flex;
+        flex-direction: column;
     }
 
     .socialMedia {
