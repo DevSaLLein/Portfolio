@@ -436,6 +436,18 @@ svg {
     font-size: 1.4rem;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;          
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(215, 215, 215); 
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(163, 163, 163);
+  }
+
 @media (max-width: 768px) {
 
     :root {
