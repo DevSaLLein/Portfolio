@@ -346,14 +346,14 @@ svg {
 .RollAction__container {
     position: fixed;
     right: 0;
-    bottom: 0;
+    bottom: 20px;
     padding: 30px;
     transition: all 0.5s ease;
     opacity: 0;
 }
 
 .activeRollButton {
-    bottom: 20px;
+    bottom: 0px;
     opacity: 1;
 }
 
