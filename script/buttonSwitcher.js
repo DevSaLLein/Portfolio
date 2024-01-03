@@ -10,8 +10,6 @@ rollButton.addEventListener('click', handleRollButtonClick);
 window.addEventListener('scroll', () => {
     if ( window.pageYOffset > 100) {
         rollButton__container.classList.add("activeRollButton");
-
-        console.log('ativado');
     } else {
         rollButton__container.classList.remove("activeRollButton");
     }

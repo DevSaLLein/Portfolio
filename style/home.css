@@ -100,8 +100,8 @@
 }
 
 .img__icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .tecnologies {
@@ -290,7 +290,7 @@ svg {
 }
 
 .project > img:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 .resume {
@@ -305,7 +305,7 @@ svg {
 
 .buttons {
     display: flex;
-    gap: 3px
+    gap: 7px
 }
 
 .buttons > button {
@@ -398,7 +398,6 @@ svg {
 }
 
 .paragrafo {
-    text-indent: 1.5em;
     font-size: var(--font-size-paragraph);
     color: var(--primary-color);
 }
