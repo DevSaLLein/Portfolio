@@ -439,7 +439,7 @@ svg {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2px
+    gap: 2px;
 }
 
 .link__container > .material-symbols-outlined {
