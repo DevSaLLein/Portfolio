@@ -307,7 +307,7 @@ svg {
 
 .buttons {
     display: flex;
-    gap: 7px
+    gap: 7px;
 }
 
 .buttons > button {
@@ -317,8 +317,9 @@ svg {
     display: flex;
     background-color: #353535;
     border-radius: 5px;
-    flex-grow: 1;
     margin-top: 10px;
+    width: 150px;
+
 }
 
 .buttons > button > a {
