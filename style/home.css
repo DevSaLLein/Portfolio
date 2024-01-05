@@ -117,21 +117,35 @@
     color: var(--secundary-color);
 }
 
+.main > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .home__container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    width: 100%;
-    gap: 50px;
+    gap: 20px;
 }
 
 .title_container {
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 600px;
-    gap: 15px
+    width: 400px;
+    gap: 15px;
+}
+
+.img__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    width: 45%;
 }
 
 .title_container div {
@@ -188,7 +202,6 @@
     align-items: flex-start;
     padding: 0 15px;
     gap: 10px;
-
 }
 
 .container > div {
@@ -202,7 +215,7 @@
     max-width: 400px;
     border-radius: 10px;
     padding: 15px;
-    height: 450px;
+    height: auto;
     transition: all 0.4s ease;
 }
 
@@ -282,7 +295,8 @@ svg {
 
 .project > img {
     border-radius: 10px;
-    width: 500px;
+    width: 45%;
+    max-width: 500px;
     transition: all 0.5s ease;
     object-fit: fill;
     max-height: 350px;
@@ -451,15 +465,21 @@ svg {
 
 body::-webkit-scrollbar {
     width: 10px;          
-  }
+}
   
-  body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     background: rgb(215, 215, 215); 
-  }
+}
   
-  body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background-color: rgb(163, 163, 163);
-  }
+}
+
+.footer {
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+}
 
 @media (max-width: 768px) {
 
@@ -467,9 +487,14 @@ body::-webkit-scrollbar {
         font-size: 10px;
         scroll-behavior: smooth;
     }
-
+    
     .img__container {
         display: none;
+    }
+
+    .title_container {
+        width: 100%;
+        margin-left: 15px;
     }
 
     .nav {
@@ -491,7 +516,6 @@ body::-webkit-scrollbar {
 
     .home__container{
         margin: 0 0 10px 0;
-        padding: 0px 20px;
     }
 
     .img-me__container:hover{
@@ -502,6 +526,7 @@ body::-webkit-scrollbar {
     .container > div {
         display: flex;
         flex-direction: column;
+        margin-left: 15px;
     }
 
     .container > div > section {
@@ -518,6 +543,20 @@ body::-webkit-scrollbar {
     .projects {
         display: flex;
         flex-direction: column;
+        margin-left: 15px;
+    }
+
+    .projects__container > div > h2::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 33%;
+        height: 5px;
+        background-color: #607ec9;
+        border-radius: 10px;
+        z-index: -1;
+        transition: all 0.5s ease;
     }
 
     .project {
