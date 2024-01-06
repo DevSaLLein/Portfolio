@@ -489,13 +489,13 @@ body::-webkit-scrollbar-thumb {
         scroll-behavior: smooth;
     }
     
+
     .img__container {
         display: none;
     }
 
     .title_container {
         width: 100%;
-        margin-left: 15px;
     }
 
     .nav {
@@ -516,7 +516,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .home__container{
-        margin: 0 0 10px 0;
+        overflow-x: hidden;
     }
 
     .img-me__container:hover{
@@ -527,7 +527,6 @@ body::-webkit-scrollbar-thumb {
     .container > div {
         display: flex;
         flex-direction: column;
-        margin-left: 15px;
     }
 
     .container > div > section {
